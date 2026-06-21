@@ -801,6 +801,11 @@ em { font-style: italic; color: var(--indigo2); }
   .nav-toggle { display: flex; }
   .btn-register { padding: 8px 14px; font-size: 0.8rem; }
 
+  /* FIX: with .main-nav hidden (display:none), its margin-left:auto no
+     longer applies to push header-actions to the right — so we apply
+     margin-left:auto directly to header-actions on mobile instead */
+  .header-actions { margin-left: auto; }
+
   /* Announce bar */
   .announce-bar { padding: 7px 12px; }
   .announce-inner { gap: 8px; font-size: 0.72rem; flex-wrap: wrap; justify-content: center; }
@@ -852,10 +857,12 @@ em { font-style: italic; color: var(--indigo2); }
   .p1-offerings { grid-template-columns: 1fr; gap: 2rem; }
   .off-item p { font-size: 0.78rem; }
 
-  /* Placement process */
-  .pp-steps { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .pp-arrow { transform: rotate(90deg); margin-left: 20px; }
-  .pp-step { padding: 0 0 0 8px; }
+  /* Placement process — FIX: align-items changed from flex-start to
+     center so each step (and its circle) lines up on one straight
+     vertical axis instead of staggering to the left */
+  .pp-steps { flex-direction: column; align-items: center; gap: 8px; }
+  .pp-arrow { transform: rotate(90deg); margin: 2px 0; }
+  .pp-step { padding: 0; }
 
   /* Govt grid */
   .govt-grid { grid-template-columns: 1fr; gap: 14px; }
