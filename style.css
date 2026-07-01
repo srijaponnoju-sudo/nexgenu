@@ -780,8 +780,9 @@ em { font-style: italic; color: var(--indigo2); }
 /* ── MOBILE 768px ── */
 @media (max-width: 768px) {
   /* Navbar */
-  .header-inner { padding: 0 16px; height: 58px; }
-  .brand-sub { display: none; }
+  .header-inner { padding: 0 16px; height: 58px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { flex: 1; }
+  .header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
   .main-nav {
     display: none;
     position: fixed;
@@ -800,6 +801,7 @@ em { font-style: italic; color: var(--indigo2); }
   .main-nav a { padding: 10px 14px; font-size: 0.9rem; border-radius: 8px; }
   .nav-toggle { display: flex; }
   .btn-register { padding: 8px 14px; font-size: 0.8rem; }
+  .header-actions { margin-left: auto; }
 
   /* Announce bar */
   .announce-bar { padding: 7px 12px; }
