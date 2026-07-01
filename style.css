@@ -929,4 +929,4 @@ em { font-style: italic; color: var(--indigo2); }
   .hero-metrics { grid-template-columns: 1fr 1fr; }
   .hero-trust { flex-direction: column; align-items: flex-start; gap: 8px; }
   .announce-inner span:first-of-type { display: none; }
-}
+}/* cache-bust v2 */
