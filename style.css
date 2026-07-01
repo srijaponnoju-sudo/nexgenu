@@ -426,13 +426,13 @@ em { font-style: italic; color: var(--indigo2); }
   align-items: center;
   justify-content: space-between;
   padding: 12px 16px;
-  border-radius: 10px;
+  border-radius: 6px;
   background: var(--g50);
   border: 1px solid var(--g100);
   transition: all 0.2s;
   overflow: visible;
 }
-.cli-dur { font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 50px; white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
+.cli-dur { font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
 .clist-item:hover { background: #ede9fe; border-color: var(--indigo3); }
 .cli-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
@@ -920,6 +920,8 @@ em { font-style: italic; color: var(--indigo2); }
   .hero-trust { flex-direction: column; align-items: flex-start; gap: 8px; }
   .announce-inner span:first-of-type { display: none; }
 }/* cache-bust v2 */
+
+
 
 
 
