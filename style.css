@@ -432,7 +432,7 @@ em { font-style: italic; color: var(--indigo2); }
   transition: all 0.2s;
   overflow: visible;
 }
-.cli-dur { display: none; font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
+.cli-dur { display: none; display: none; font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 6px; white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
 .clist-item:hover { background: #ede9fe; border-color: var(--indigo3); }
 .cli-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
@@ -928,5 +928,6 @@ em { font-style: italic; color: var(--indigo2); }
 
 
 /* force-redeploy-202607011349 */
+
 
 

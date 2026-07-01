@@ -1,136 +1,214 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NexGenU — Career Acceleration Ecosystem</title>
-<link rel="stylesheet" href="style.css?v=5">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexGenU â€” Career Acceleration Ecosystem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fallback if Clash Display not loaded -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Fraunces:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-
 <!-- ANNOUNCEMENT BAR -->
 <div class="announce-bar">
-  <span class="announce-dot"></span>
-  India's Only 3-in-1 Career Ecosystem &mdash; Engineering &middot; Government Jobs &middot; Startup Guidance
-  <a href="https://form.nexgenu.dpdns.org" class="announce-link">Register &rarr;</a>
+  <div class="announce-inner">
+    <span class="announce-dot"></span>
+    <span>ðŸŽ¯ India's Only 3-in-1 Career Ecosystem â€” Engineering Â· Government Jobs Â· Startup Guidance</span>
+    <a href="https://nexgenu-form.vercel.app/" target="_blank" class="announce-cta">Register↓’</a>
+  </div>
 </div>
 
 <!-- NAVBAR -->
 <header class="header" id="header">
   <div class="header-inner">
     <a href="#" class="brand">
-      <div class="brand-mark">N</div>
+      <div class="brand-mark">
+        <span>N</span>
+      </div>
       <div class="brand-text">
         <span class="brand-name">NexGenU</span>
         <span class="brand-sub">Career Acceleration Ecosystem</span>
       </div>
     </a>
+
     <nav class="main-nav" id="mainNav">
       <a href="#home">Home</a>
       <a href="#engineering">Engineering</a>
-      <a href="#govt">Govt Jobs</a>
+      <a href="#govtjobs">Govt Jobs</a>
       <a href="#startup">Startups</a>
       <a href="#platform">Platform</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="https://form.nexgenu.dpdns.org" class="btn-primary nav-register">Register</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+
+    <div class="header-actions">
+      <a href="https://nexgenu-form.vercel.app/" target="_blank" class="btn-register">Register</a>
+      <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="tag-dot"></span>
-      Founded by Challa Shiva &nbsp;&middot;&nbsp; India's #1 Career Ecosystem
-    </div>
-    <h1 class="hero-h1">
-      Every Engineer.<br>
-      Every Aspirant.<br>
-      <em>Every Dream.</em>
-    </h1>
-    <p class="hero-p">NexGenU is built for students from every engineering branch &mdash; CSE, ECE, EEE, Civil, Mechanical, IT and beyond &mdash; plus anyone chasing a government job or building a startup. One platform. Three powerful pathways.</p>
-    <div class="hero-btns">
-      <a href="https://form.nexgenu.dpdns.org" class="btn-primary">Start Your Journey &rarr;</a>
-      <a href="#engineering" class="btn-outline">Explore Pillars</a>
-    </div>
-    <div class="hero-social-proof">
-      <div class="sp-avatars">
-        <span class="sp-av">S</span><span class="sp-av">R</span><span class="sp-av">P</span><span class="sp-av">A</span><span class="sp-av">+</span>
+<!-- â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â• -->
+<section class="hero-section" id="home">
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Founded by Challa Shiva &nbsp;Â·&nbsp; India's #1 Career Ecosystem
       </div>
-      <span>1,000+ students already enrolled across India</span>
+      <h1 class="hero-heading">
+        Every Engineer.<br/>
+        Every Aspirant.<br/>
+        <em>Every Dream.</em>
+      </h1>
+      <p class="hero-sub">
+        NexGenU is built for students from every engineering branch â€” CSE, ECE, EEE, Civil, Mechanical, IT and beyond â€” plus anyone chasing a government job or building a startup. One platform. Three powerful pathways.
+      </p>
+      <div class="hero-actions">
+        <a href="https://nexgenu-form.vercel.app/" target="_blank" class="btn-hero-primary">
+          Start Your Journey
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#engineering" class="btn-hero-secondary">Explore Pillars</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-faces">
+          <div class="tface">S</div>
+          <div class="tface">R</div>
+          <div class="tface">P</div>
+          <div class="tface">A</div>
+          <div class="tface">+</div>
+        </div>
+        <span><strong>1,000+</strong> students already enrolled across India</span>
+      </div>
     </div>
+
+    <div class="hero-visual" style="display:none;">
+      <div class="pathway-dial">
+        <div class="dial-center">
+          <div class="dial-logo">N</div>
+          <div class="dial-label">NexGenU</div>
+        </div>
+        <div class="dial-path path-eng">
+          <div class="path-icon">âš™ï¸</div>
+          <div class="path-name">Engineering<br/>& IT Careers</div>
+          <div class="path-stat">25+ Branches</div>
+        </div>
+        <div class="dial-path path-govt">
+          <div class="path-icon">ðŸ›ï¸</div>
+          <div class="path-name">Government<br/>Exam Coaching</div>
+          <div class="path-stat">SSC Â· Bank Â· Rail</div>
+        </div>
+        <div class="dial-path path-start">
+          <div class="path-icon">ðŸš€</div>
+          <div class="path-name">Startup<br/>Incubation</div>
+          <div class="path-stat">Idea↓’ Launch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-metrics">
+    <div class="metric"><strong>1,000+</strong><span>Students Trained</span></div>
+    <div class="metric-sep"></div>
+    <div class="metric"><strong>100+</strong><span>Hiring Partners</span></div>
+    <div class="metric-sep"></div>
+    <div class="metric"><strong>100%</strong><span>Placement Guarantee</span></div>
+    <div class="metric-sep"></div>
+    <div class="metric"><strong>All</strong><span>Engineering Branches</span></div>
+    <div class="metric-sep"></div>
+    <div class="metric"><strong>3</strong><span>Career Pathways</span></div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats-bar">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item"><strong>1,000+</strong><span>Students Trained</span></div>
-      <div class="stat-item"><strong>100+</strong><span>Hiring Partners</span></div>
-      <div class="stat-item"><strong>100%</strong><span>Placement Guarantee</span></div>
-      <div class="stat-item"><strong>All</strong><span>Engineering Branches</span></div>
-      <div class="stat-item"><strong>3</strong><span>Career Pathways</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- PILLAR 1: ENGINEERING -->
-<section class="pillar" id="engineering">
-  <div class="container">
-    <div class="pillar-label">Pillar One</div>
-    <h2>Engineering &amp;<br>Career Development</h2>
-    <p class="pillar-desc">We serve every engineering stream &mdash; not just CSE. Whether you are a Mechanical engineer seeking a core job, a Civil engineer exploring design tech, or an EEE student targeting embedded systems &mdash; NexGenU has a structured career pathway for you, along with all IT and Non-IT roles.</p>
-    <a href="https://form.nexgenu.dpdns.org" class="btn-primary">Enroll in Engineering Track &rarr;</a>
-
-    <h3 class="sub-heading">All Engineering Branches Covered</h3>
-    <div class="branch-grid">
-      <div class="branch-card"><div class="bc-icon">&#128187;</div><strong>CSE &amp; IT</strong><p>Full Stack &middot; AI/ML &middot; Cloud &middot; Cyber Security &middot; DevOps &middot; Blockchain</p></div>
-      <div class="branch-card"><div class="bc-icon">&#128225;</div><strong>ECE</strong><p>Embedded &middot; VLSI &middot; IoT &middot; Signal Processing &middot; RF Engineering</p></div>
-      <div class="branch-card"><div class="bc-icon">&#9889;</div><strong>EEE</strong><p>Power Systems &middot; PLC &middot; SCADA &middot; Electrical Design &middot; Renewables</p></div>
-      <div class="branch-card"><div class="bc-icon">&#9881;</div><strong>Mechanical</strong><p>CAD/CAM &middot; AutoCAD &middot; SolidWorks &middot; CATIA &middot; Core Manufacturing</p></div>
-      <div class="branch-card"><div class="bc-icon">&#127959;</div><strong>Civil</strong><p>AutoCAD Civil &middot; Revit &middot; Estimation &middot; GIS &middot; Structural Design</p></div>
-      <div class="branch-card"><div class="bc-icon">&#128202;</div><strong>Non-IT Roles</strong><p>Digital Marketing &middot; HR Tech &middot; Finance &middot; Business Analyst &middot; Sales</p></div>
+<!-- â•â•â•â•â•â•â• PILLAR 1 â€” ENGINEERING & IT â•â•â•â•â•â•â• -->
+<section class="pillar-section p1-bg" id="engineering">
+  <div class="pillar-wrapper">
+    <div class="pillar-intro">
+      <div class="pillar-tag p1-tag">Pillar One</div>
+      <h2 class="pillar-heading">Engineering &<br/><span>Career Development</span></h2>
+      <p class="pillar-desc">We serve every engineering stream â€” not just CSE. Whether you are a Mechanical engineer seeking a core job, a Civil engineer exploring design tech, or an EEE student targeting embedded systems â€” NexGenU has a structured career pathway for you, along with all IT and Non-IT roles.</p>
+      <a href="https://nexgenu-form.vercel.app/" target="_blank" class="btn-pillar1">Enroll in Engineering Track↓’</a>
     </div>
 
-    <h3 class="sub-heading">What You Get</h3>
-    <div class="benefits-list">
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>Industry-Aligned Curriculum</strong><p>Courses built with hiring companies &mdash; updated every semester to match current job requirements</p></div></div>
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>Live Projects &amp; Portfolio Building</strong><p>Work on MNC-level real projects, build a GitHub portfolio that impresses recruiters</p></div></div>
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>MNC-Level Mock Interviews</strong><p>Technical + HR rounds simulated by industry professionals with recorded feedback</p></div></div>
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>Resume, LinkedIn &amp; ATS Optimization</strong><p>Craft job-winning resumes that pass Applicant Tracking Systems and attract recruiters</p></div></div>
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>Backlog &amp; Non-CS Branch Support</strong><p>Dedicated support for students from non-CS branches and those with academic backlogs</p></div></div>
-      <div class="benefit-item"><div class="bi-check">&#10003;</div><div><strong>100% Placement Guarantee</strong><p>We do not stop until you are placed &mdash; with active follow-up, referrals, and partner network access</p></div></div>
+    <div class="branch-universe">
+      <h3 class="branch-title">All Engineering Branches Covered</h3>
+      <div class="branch-grid">
+        <div class="branch-card b-cse">
+          <div class="bc-icon">ðŸ’»</div>
+          <div class="bc-name">CSE & IT</div>
+          <div class="bc-subs">Full Stack Â· AI/ML Â· Cloud Â· Cyber Security Â· DevOps Â· Blockchain</div>
+        </div>
+        <div class="branch-card b-ece">
+          <div class="bc-icon">ðŸ“¡</div>
+          <div class="bc-name">ECE</div>
+          <div class="bc-subs">Embedded Â· VLSI Â· IoT Â· Signal Processing Â· RF Engineering</div>
+        </div>
+        <div class="branch-card b-eee">
+          <div class="bc-icon">âš¡</div>
+          <div class="bc-name">EEE</div>
+          <div class="bc-subs">Power Systems Â· PLC Â· SCADA Â· Electrical Design Â· Renewables</div>
+        </div>
+        <div class="branch-card b-mech">
+          <div class="bc-icon">âš™ï¸</div>
+          <div class="bc-name">Mechanical</div>
+          <div class="bc-subs">CAD/CAM Â· AutoCAD Â· SolidWorks Â· CATIA Â· Core Manufacturing</div>
+        </div>
+        <div class="branch-card b-civil">
+          <div class="bc-icon">ðŸ—ï¸</div>
+          <div class="bc-name">Civil</div>
+          <div class="bc-subs">AutoCAD Civil Â· Revit Â· Estimation Â· GIS Â· Structural Design</div>
+        </div>
+        <div class="branch-card b-non">
+          <div class="bc-icon">ðŸ“Š</div>
+          <div class="bc-name">Non-IT Roles</div>
+          <div class="bc-subs">Digital Marketing Â· HR Tech Â· Finance Â· Business Analyst Â· Sales</div>
+        </div>
+      </div>
     </div>
 
-    <h3 class="sub-heading">Featured Courses</h3>
-    <div class="course-list">
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#128187;</span><div><strong>Full Stack Development</strong><span>MERN &middot; MEAN &middot; REST APIs</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#129302;</span><div><strong>Data Science &amp; AI/ML</strong><span>Python &middot; TensorFlow &middot; NLP</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#9729;</span><div><strong>Cloud Computing</strong><span>AWS &middot; Azure &middot; GCP &middot; DevOps</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#128737;</span><div><strong>Cyber Security</strong><span>Ethical Hacking &middot; SOC &middot; VAPT</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#128225;</span><div><strong>Embedded &amp; IoT</strong><span>Arduino &middot; Raspberry Pi &middot; VLSI</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#127912;</span><div><strong>UI/UX Design</strong><span>Figma &middot; Prototyping &middot; Research</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#9881;</span><div><strong>CAD/CAM for Mech &amp; Civil</strong><span>AutoCAD &middot; SolidWorks &middot; Revit</span></div></div></div>
-      <div class="clist-item"><div class="cli-left"><span class="cli-icon">&#128227;</span><div><strong>Digital Marketing</strong><span>SEO &middot; SEM &middot; Social Media &middot; Analytics</span></div></div></div>
+    <div class="p1-offerings">
+      <div class="offering-block">
+        <h3>What You Get</h3>
+        <div class="offering-list">
+          <div class="off-item"><span class="off-dot v"></span><div><strong>Industry-Aligned Curriculum</strong><p>Courses built with hiring companies â€” updated every semester to match current job requirements</p></div></div>
+          <div class="off-item"><span class="off-dot v"></span><div><strong>Live Projects & Portfolio Building</strong><p>Work on MNC-level real projects, build a GitHub portfolio that impresses recruiters</p></div></div>
+          <div class="off-item"><span class="off-dot v"></span><div><strong>MNC-Level Mock Interviews</strong><p>Technical + HR rounds simulated by industry professionals with recorded feedback</p></div></div>
+          <div class="off-item"><span class="off-dot v"></span><div><strong>Resume, LinkedIn & ATS Optimization</strong><p>Craft job-winning resumes that pass Applicant Tracking Systems and attract recruiters</p></div></div>
+          <div class="off-item"><span class="off-dot v"></span><div><strong>Backlog & Non-CS Branch Support</strong><p>Dedicated support for students from non-CS branches and those with academic backlogs</p></div></div>
+          <div class="off-item"><span class="off-dot v"></span><div><strong>100% Placement Guarantee</strong><p>We do not stop until you are placed â€” with active follow-up, referrals, and partner network access</p></div></div>
+        </div>
+      </div>
+
+      <div class="offering-block">
+        <h3>Featured Courses</h3>
+        <div class="course-list">
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸ’»</span><div><strong>Full Stack Development</strong><span>MERN Â· MEAN Â· REST APIs</span></div></div><span class="cli-dur">6 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸ¤–</span><div><strong>Data Science & AI/ML</strong><span>Python Â· TensorFlow Â· NLP</span></div></div><span class="cli-dur">6 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">â˜ï¸</span><div><strong>Cloud Computing</strong><span>AWS Â· Azure Â· GCP Â· DevOps</span></div></div><span class="cli-dur">6 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸ›¡ï¸</span><div><strong>Cyber Security</strong><span>Ethical Hacking Â· SOC Â· VAPT</span></div></div><span class="cli-dur">6 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸ“¡</span><div><strong>Embedded & IoT</strong><span>Arduino Â· Raspberry Pi Â· VLSI</span></div></div><span class="cli-dur">4 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸŽ¨</span><div><strong>UI/UX Design</strong><span>Figma Â· Prototyping Â· Research</span></div></div><span class="cli-dur">4 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">âš™ï¸</span><div><strong>CAD/CAM for Mech & Civil</strong><span>AutoCAD Â· SolidWorks Â· Revit</span></div></div><span class="cli-dur">3 Months</span></div>
+          <div class="clist-item"><div class="cli-left"><span class="cli-icon">ðŸ“£</span><div><strong>Digital Marketing</strong><span>SEO Â· SEM Â· Social Media Â· Analytics</span></div></div><span class="cli-dur">3 Months</span></div>
+        </div>
+      </div>
     </div>
 
-    <h3 class="sub-heading">Placement Process</h3>
     <div class="placement-process">
+      <h3>Placement Process</h3>
       <div class="pp-steps">
         <div class="pp-step"><div class="pp-num">1</div><strong>Enroll</strong><p>Choose your branch pathway</p></div>
         <div class="pp-arrow">&#8595;</div>
         <div class="pp-step"><div class="pp-num">2</div><strong>Learn</strong><p>Industry-aligned training</p></div>
         <div class="pp-arrow">&#8595;</div>
-        <div class="pp-step"><div class="pp-num">3</div><strong>Build</strong><p>Real projects &amp; portfolio</p></div>
+        <div class="pp-step"><div class="pp-num">3</div><strong>Build</strong><p>Real projects & portfolio</p></div>
         <div class="pp-arrow">&#8595;</div>
-        <div class="pp-step"><div class="pp-num">4</div><strong>Prepare</strong><p>Interviews &amp; resume</p></div>
+        <div class="pp-step"><div class="pp-num">4</div><strong>Prepare</strong><p>Interviews & resume</p></div>
         <div class="pp-arrow">&#8595;</div>
         <div class="pp-step"><div class="pp-num">5</div><strong>Place</strong><p>Guaranteed placement</p></div>
       </div>
@@ -138,206 +216,405 @@
   </div>
 </section>
 
-<!-- PILLAR 2: GOVT -->
-<section class="pillar pillar-dark" id="govt">
-  <div class="container">
-    <div class="pillar-label">Pillar Two</div>
-    <h2>Government Exam<br>Coaching &mdash; Full Scale</h2>
-    <p class="pillar-desc">Millions of Indian students aspire to government jobs. NexGenU dedicates an entire service pillar to comprehensive, structured, affordable government exam preparation &mdash; from preliminary to mains to interview rounds.</p>
+<!-- â•â•â•â•â•â•â• PILLAR 2 â€” GOVT JOBS â•â•â•â•â•â•â• -->
+<section class="pillar-section p2-bg" id="govtjobs">
+  <div class="pillar-wrapper">
+    <div class="p2-header">
+      <div class="pillar-tag p2-tag">Pillar Two</div>
+      <h2 class="pillar-heading p2-color">Government Exam<br/><span>Coaching â€” Full Scale</span></h2>
+      <p class="pillar-desc">Millions of Indian students aspire to government jobs. NexGenU dedicates an entire service pillar to comprehensive, structured, affordable government exam preparation â€” from preliminary to mains to interview rounds.</p>
+    </div>
 
     <div class="govt-grid">
-      <div class="govt-card">
-        <div class="gc-icon">&#128203;</div>
-        <strong>SSC Exams</strong>
-        <span class="gc-badge">Staff Selection Commission</span>
-        <ul><li>SSC CGL &mdash; Combined Graduate Level</li><li>SSC CHSL &mdash; Combined Higher Secondary</li><li>SSC MTS &mdash; Multi Tasking Staff</li><li>SSC GD &mdash; General Duty Constable</li><li>SSC JE &mdash; Junior Engineer</li></ul>
+      <!-- SSC -->
+      <div class="govt-card gc-ssc">
+        <div class="gc-header"><span class="gc-icon">ðŸ“‹</span><div><h4>SSC Exams</h4><span>Staff Selection Commission</span></div></div>
+        <ul class="gc-list">
+          <li>SSC CGL â€” Combined Graduate Level</li>
+          <li>SSC CHSL â€” Combined Higher Secondary</li>
+          <li>SSC MTS â€” Multi Tasking Staff</li>
+          <li>SSC GD â€” General Duty Constable</li>
+          <li>SSC CPO â€” Central Police Organisation</li>
+          <li>SSC JE â€” Junior Engineer (Civil/Elec/Mech)</li>
+        </ul>
+        <div class="gc-badge">Prelims + Mains + Interview</div>
       </div>
-      <div class="govt-card">
-        <div class="gc-icon">&#127970;</div>
-        <strong>Banking Sector</strong>
-        <span class="gc-badge">IBPS &middot; SBI &middot; RBI</span>
-        <ul><li>IBPS PO &mdash; Probationary Officer</li><li>IBPS Clerk &mdash; Clerical Cadre</li><li>SBI PO &amp; SBI Clerk</li><li>RBI Grade B &amp; Assistant</li><li>NABARD &amp; SIDBI Exams</li></ul>
+
+      <!-- Banking -->
+      <div class="govt-card gc-bank">
+        <div class="gc-header"><span class="gc-icon">ðŸ¦</span><div><h4>Banking Sector</h4><span>IBPS Â· SBI Â· RBI</span></div></div>
+        <ul class="gc-list">
+          <li>IBPS PO â€” Probationary Officer</li>
+          <li>IBPS Clerk â€” Clerical Cadre</li>
+          <li>SBI PO & SBI Clerk</li>
+          <li>RBI Grade B & Assistant</li>
+          <li>IBPS RRB â€” Regional Rural Banks</li>
+          <li>NABARD & SIDBI Exams</li>
+        </ul>
+        <div class="gc-badge">Quant Â· Reasoning Â· English Â· GK</div>
       </div>
-      <div class="govt-card">
-        <div class="gc-icon">&#128642;</div>
-        <strong>Railway Exams</strong>
-        <span class="gc-badge">RRB &mdash; Indian Railways</span>
-        <ul><li>RRB NTPC &mdash; Non-Technical Popular Categories</li><li>RRB Group D &mdash; Level 1 Posts</li><li>RRB ALP &mdash; Assistant Loco Pilot</li><li>RRB JE &mdash; Junior Engineer</li><li>RPF Constable &amp; Sub-Inspector</li></ul>
+
+      <!-- Railway -->
+      <div class="govt-card gc-rail">
+        <div class="gc-header"><span class="gc-icon">ðŸš‚</span><div><h4>Railway Exams</h4><span>RRB â€” Indian Railways</span></div></div>
+        <ul class="gc-list">
+          <li>RRB NTPC â€” Non-Technical Popular Categories</li>
+          <li>RRB Group D â€” Level 1 Posts</li>
+          <li>RRB ALP â€” Assistant Loco Pilot</li>
+          <li>RRB JE â€” Junior Engineer</li>
+          <li>RRB Technician Posts</li>
+          <li>RPF Constable & Sub-Inspector</li>
+        </ul>
+        <div class="gc-badge">CBT 1 + CBT 2 + Document</div>
       </div>
-      <div class="govt-card">
-        <div class="gc-icon">&#127891;</div>
-        <strong>Entrance Exams</strong>
-        <span class="gc-badge">MBA &middot; M.Tech &middot; PG &amp; More</span>
-        <ul><li>MBA &mdash; CAT, MAT, XAT, CMAT, GMAT</li><li>M.Tech &mdash; GATE (All Engineering Branches)</li><li>MCA &mdash; NIMCET &amp; University Entrances</li><li>Law &mdash; CLAT, AILET PG Entrances</li><li>CTET &amp; State TET Teaching Exams</li></ul>
+
+
+
+      <!-- Entrance Exams -->
+      <div class="govt-card gc-teach">
+        <div class="gc-header"><span class="gc-icon">ðŸŽ“</span><div><h4>Entrance Exams</h4><span>MBA Â· M.Tech Â· PG & More</span></div></div>
+        <ul class="gc-list">
+          <li>MBA â€” CAT, MAT, XAT, CMAT, GMAT</li>
+          <li>M.Tech â€” GATE (All Engineering Branches)</li>
+          <li>MCA â€” NIMCET & University Entrances</li>
+          <li>M.Sc â€” IIT JAM & University Entrances</li>
+          <li>Law â€” CLAT, AILET PG Entrances</li>
+          <li>CTET & State TET Teaching Exams</li>
+        </ul>
+        <div class="gc-badge">Aptitude Â· Subject Â· Interview</div>
+      </div>
+    </div>
+
+    <div class="govt-features">
+      <h3>How NexGenU Govt Coaching Works</h3>
+      <div class="gf-grid">
+        <div class="gf-item"><span>ðŸ“–</span><strong>Structured Study Plan</strong><p>Exam-specific daily, weekly and monthly study schedules with progress checkpoints</p></div>
+        <div class="gf-item"><span>ðŸŽ¯</span><strong>Topic-Wise Expert Classes</strong><p>Live and recorded sessions for Quant, Reasoning, English, GK, and subject-specific topics</p></div>
+        <div class="gf-item"><span>ðŸ“Š</span><strong>Mock Test Series</strong><p>1000+ previous year questions, full-length mock tests, and sectional tests with detailed analysis</p></div>
+        <div class="gf-item"><span>ðŸ“°</span><strong>Daily Current Affairs</strong><p>Curated daily current affairs, monthly magazines, and GK capsules in Telugu and English</p></div>
+        <div class="gf-item"><span>ðŸ‘¨â€ðŸ«</span><strong>Expert Faculty</strong><p>Mentors who have cleared these exams themselves â€” with insider tips and strategies</p></div>
+        <div class="gf-item"><span>ðŸ“±</span><strong>Parent & Student Dashboard</strong><p>Real-time progress tracking accessible to parents â€” full transparency on preparation status</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PILLAR 3: STARTUP -->
-<section class="pillar" id="startup">
-  <div class="container">
-    <div class="pillar-label">Pillar Three</div>
-    <h2>Startup &amp; Entrepreneurship<br><em>From Zero to Launch</em></h2>
-    <p class="pillar-desc">NexGenU believes the next generation should not just be employed &mdash; they should be employers. Our startup pillar is a complete incubation ecosystem taking ideas from first spark to funded reality.</p>
+<!-- â•â•â•â•â•â•â• PILLAR 3 â€” STARTUP â•â•â•â•â•â•â• -->
+<section class="pillar-section p3-bg" id="startup">
+  <div class="pillar-wrapper">
+    <div class="p3-header">
+      <div class="pillar-tag p3-tag">Pillar Three</div>
+      <h2 class="pillar-heading p3-color">Startup & Entrepreneurship<br/><span>From Zero to Launch</span></h2>
+      <p class="pillar-desc">NexGenU believes the next generation should not just be employed â€” they should be employers. Our startup pillar is a complete incubation ecosystem taking ideas from first spark to funded reality, with mentorship, legal support, investor networking, and hackathon exposure.</p>
+    </div>
 
-    <div class="startup-stages">
-      <div class="stl-card"><div class="stl-num">01</div><strong>Ideation</strong><p>Problem identification, market research, customer validation</p><div class="stl-tags"><span>Problem Mapping</span><span>Market Research</span><span>Validation</span></div></div>
-      <div class="stl-card"><div class="stl-num">02</div><strong>Build</strong><p>MVP design, prototyping, iteration cycles, product-market fit</p><div class="stl-tags"><span>MVP Development</span><span>Prototyping</span><span>User Testing</span></div></div>
-      <div class="stl-card"><div class="stl-num">03</div><strong>Strategy</strong><p>Business model canvas, go-to-market strategy, revenue modelling</p><div class="stl-tags"><span>Business Model</span><span>GTM Strategy</span><span>Financial Planning</span></div></div>
-      <div class="stl-card"><div class="stl-num">04</div><strong>Incubation</strong><p>Access to incubation network, co-working spaces, technical mentorship</p><div class="stl-tags"><span>Incubation Network</span><span>Mentors</span><span>Operations</span></div></div>
-      <div class="stl-card"><div class="stl-num">05</div><strong>Funding</strong><p>Investor pitch preparation, angel network introductions, DPIIT registration</p><div class="stl-tags"><span>Investor Pitch</span><span>Angel Network</span><span>DPIIT</span></div></div>
-      <div class="stl-card"><div class="stl-num">06</div><strong>Scale</strong><p>Growth hacking, hiring strategy, partnership building, media outreach</p><div class="stl-tags"><span>Growth Strategy</span><span>Team Building</span><span>Media &amp; PR</span></div></div>
+    <div class="startup-timeline">
+      <h3>Your Startup Journey at NexGenU</h3>
+      <div class="stl-steps">
+        <div class="stl-step">
+          <div class="stl-icon">ðŸ’¡</div>
+          <div class="stl-content">
+            <h4>Stage 1 â€” Ideation</h4>
+            <p>Problem identification, market research, customer validation, and business hypothesis creation through structured ideation workshops</p>
+            <div class="stl-tags"><span>Problem Mapping</span><span>Market Research</span><span>Validation Frameworks</span></div>
+          </div>
+        </div>
+        <div class="stl-step">
+          <div class="stl-icon">ðŸ› ï¸</div>
+          <div class="stl-content">
+            <h4>Stage 2 â€” Build</h4>
+            <p>MVP design, prototyping, iteration cycles, technical execution planning, and product-market fit testing with real users</p>
+            <div class="stl-tags"><span>MVP Development</span><span>Prototyping</span><span>User Testing</span></div>
+          </div>
+        </div>
+        <div class="stl-step">
+          <div class="stl-icon">ðŸ“ˆ</div>
+          <div class="stl-content">
+            <h4>Stage 3 â€” Strategy</h4>
+            <p>Business model canvas, go-to-market strategy, revenue modelling, competitive analysis, and financial projections</p>
+            <div class="stl-tags"><span>Business Model</span><span>GTM Strategy</span><span>Financial Planning</span></div>
+          </div>
+        </div>
+        <div class="stl-step">
+          <div class="stl-icon">ðŸ¢</div>
+          <div class="stl-content">
+            <h4>Stage 4 â€” Incubation</h4>
+            <p>Access to NexGenU's startup incubation network, co-working spaces, technical mentorship, and operational guidance</p>
+            <div class="stl-tags"><span>Incubation Network</span><span>Technical Mentors</span><span>Operations Support</span></div>
+          </div>
+        </div>
+        <div class="stl-step">
+          <div class="stl-icon">ðŸ’°</div>
+          <div class="stl-content">
+            <h4>Stage 5 â€” Funding</h4>
+            <p>Investor pitch preparation, angel network introductions, DPIIT startup registration, grant applications, and fundraising strategy</p>
+            <div class="stl-tags"><span>Investor Pitch</span><span>Angel Network</span><span>DPIIT Registration</span></div>
+          </div>
+        </div>
+        <div class="stl-step">
+          <div class="stl-icon">ðŸš€</div>
+          <div class="stl-content">
+            <h4>Stage 6 â€” Scale</h4>
+            <p>Growth hacking, hiring strategy, partnership building, media outreach, and long-term mentorship for post-launch scaling</p>
+            <div class="stl-tags"><span>Growth Strategy</span><span>Team Building</span><span>Media & PR</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="startup-support">
+      <h3>Full-Spectrum Startup Support</h3>
+      <div class="ss-grid">
+        <div class="ss-card"><div class="ss-icon">ðŸ†</div><h4>Hackathons & Innovation Contests</h4><p>Regular hackathons, innovation challenges, and national-level competitions with prizes and incubation opportunities</p></div>
+        <div class="ss-card"><div class="ss-icon">âš–ï¸</div><h4>Legal & Compliance Guidance</h4><p>Company registration, trademark filing, IP protection, co-founder agreements, and startup-specific legal frameworks</p></div>
+        <div class="ss-card"><div class="ss-icon">ðŸ’³</div><h4>Financial & Accounting Support</h4><p>Startup accounting, GST registration, financial modelling, CAP table management, and funding documentation</p></div>
+        <div class="ss-card"><div class="ss-icon">ðŸ¤</div><h4>Mentor & Investor Network</h4><p>Direct access to a curated network of founders, CXOs, angel investors, and venture capitalists across India</p></div>
+        <div class="ss-card"><div class="ss-icon">ðŸŒ</div><h4>Startup Community</h4><p>A thriving peer community of co-founders, builders, and innovators â€” collaborate, share and grow together</p></div>
+        <div class="ss-card"><div class="ss-icon">ðŸ“£</div><h4>Media & Brand Building</h4><p>PR strategy, social media launch, startup storytelling, and media coverage to establish brand presence from day one</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- WHY NEXGENU -->
-<section class="why-section">
-  <div class="container">
-    <div class="why-label">Why NexGenU Wins</div>
-    <h2>Not a Course Platform.<br><em>A Career Transformation Engine.</em></h2>
+<!-- â•â•â•â•â•â•â• NEXGENU DIFFERENCE â•â•â•â•â•â•â• -->
+<section class="diff-section">
+  <div class="diff-inner">
+    <div class="diff-label">Why NexGenU Wins</div>
+    <h2>Not a Course Platform.<br/>A <span>Career Transformation Engine.</span></h2>
     <div class="diff-table">
-      <div class="diff-row diff-head">
-        <div>What Others Do</div>
-        <div>What NexGenU Does</div>
+      <div class="diff-thead">
+        <div class="dtd-left">What Others Do</div>
+        <div class="dtd-right">What NexGenU Does</div>
       </div>
-      <div class="diff-row"><div>&#10007; Only CSE / IT branch focus</div><div>&#10003; All 8+ engineering branches covered</div></div>
-      <div class="diff-row"><div>&#10007; Recorded courses only</div><div>&#10003; Live classes + real projects + mentorship</div></div>
-      <div class="diff-row"><div>&#10007; No government exam support</div><div>&#10003; Complete SSC, Banking, Railway, Defence coaching</div></div>
-      <div class="diff-row"><div>&#10007; Zero startup ecosystem</div><div>&#10003; Idea to funding &mdash; full incubation support</div></div>
-      <div class="diff-row"><div>&#10007; Expensive subscriptions</div><div>&#10003; Affordable, outcome-driven pricing</div></div>
-      <div class="diff-row"><div>&#10007; No parent visibility</div><div>&#10003; Parent + college dashboards with real-time tracking</div></div>
-      <div class="diff-row"><div>&#10007; Backlog students rejected</div><div>&#10003; We support backlog students too &mdash; talent over transcript</div></div>
-      <div class="diff-row"><div>&#10007; Placement &ldquo;assistance&rdquo;</div><div>&#10003; 100% Placement Guarantee &mdash; we don&rsquo;t stop till you&rsquo;re placed</div></div>
+      <div class="diff-tbody">
+        <div class="dtr"><div class="dtd-left"><span class="x-icon">âœ—</span> Only CSE / IT branch focus</div><div class="dtd-right"><span class="c-icon">âœ“</span> All 8+ engineering branches covered</div></div>
+        <div class="dtr alt"><div class="dtd-left"><span class="x-icon">âœ—</span> Recorded courses only</div><div class="dtd-right"><span class="c-icon">âœ“</span> Live classes + real projects + mentorship</div></div>
+        <div class="dtr"><div class="dtd-left"><span class="x-icon">âœ—</span> No government exam support</div><div class="dtd-right"><span class="c-icon">âœ“</span> Complete SSC, Banking, Railway, Defence coaching</div></div>
+        <div class="dtr alt"><div class="dtd-left"><span class="x-icon">âœ—</span> Zero startup ecosystem</div><div class="dtd-right"><span class="c-icon">âœ“</span> Idea to funding â€” full incubation support</div></div>
+        <div class="dtr"><div class="dtd-left"><span class="x-icon">âœ—</span> Expensive subscriptions</div><div class="dtd-right"><span class="c-icon">âœ“</span> Affordable, outcome-driven pricing</div></div>
+        <div class="dtr alt"><div class="dtd-left"><span class="x-icon">âœ—</span> No parent visibility</div><div class="dtd-right"><span class="c-icon">âœ“</span> Parent + college dashboards with real-time tracking</div></div>
+        <div class="dtr"><div class="dtd-left"><span class="x-icon">âœ—</span> Backlog students rejected</div><div class="dtd-right"><span class="c-icon">âœ“</span> We support backlog students too â€” talent over transcript</div></div>
+        <div class="dtr alt"><div class="dtd-left"><span class="x-icon">âœ—</span> Placement "assistance"</div><div class="dtd-right"><span class="c-icon">âœ“</span> 100% Placement Guarantee â€” we don't stop till you're placed</div></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PLATFORM FEATURES -->
+<!-- â•â•â•â•â•â•â• PLATFORM FEATURES â•â•â•â•â•â•â• -->
 <section class="platform-section" id="platform">
-  <div class="container">
-    <h2>Everything in One Place.<br><em>Built for Student Success.</em></h2>
+  <div class="platform-inner">
+    <div class="plat-label">Platform Features</div>
+    <h2>Everything in One Place.<br/><span>Built for Student Success.</span></h2>
     <div class="plat-grid">
-      <div class="plat-card"><div class="pc-icon">&#127909;</div><strong>Live &amp; Interactive Classes</strong><p>Expert-led live sessions with real-time doubt solving, interactive quizzes, and peer collaboration tools.</p></div>
-      <div class="plat-card"><div class="pc-icon">&#129504;</div><strong>AI-Powered Learning Paths</strong><p>Personalized skill gap analysis and adaptive curriculum that adjusts to your branch, year, and career goal.</p></div>
-      <div class="plat-card"><div class="pc-icon">&#128106;</div><strong>Parent &amp; College Dashboards</strong><p>Real-time progress visibility for parents and institutional administrators &mdash; full transparency.</p></div>
-      <div class="plat-card"><div class="pc-icon">&#128188;</div><strong>Live Project Lab</strong><p>MNC-level real project workflows with GitHub integration and reviewer feedback.</p></div>
-      <div class="plat-card"><div class="pc-icon">&#128221;</div><strong>Unified Mock Test Engine</strong><p>Tests for IT interviews, government exams, and startup assessments &mdash; all in one dashboard.</p></div>
-      <div class="plat-card pc-main"><div class="pc-icon">&#127760;</div><strong>Community &amp; Peer Network</strong><p>Forums, hackathon boards, study groups, and mentorship scheduling in one ecosystem.</p></div>
-      <div class="plat-card"><div class="pc-icon">&#128241;</div><strong>Mobile-First Design</strong><p>Full platform access on any device &mdash; learn during commute, revise before bed, test anytime.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- STAKEHOLDERS -->
-<section class="serve-section">
-  <div class="container">
-    <h2>Built for Everyone in the<br><em>Student Success Journey</em></h2>
-    <div class="serve-grid">
-      <div class="serve-card"><div class="sc-num">01</div><div class="sc-icon">&#127891;</div><strong>Students</strong><p>Engineering students of all branches, fresh graduates, job-seekers, government exam aspirants, and aspiring entrepreneurs &mdash; regardless of college tier, CGPA, or backlog status.</p><ul><li>Career assessment &amp; roadmap</li><li>Domain-specific training</li><li>Placement &amp; exam support</li></ul></div>
-      <div class="serve-card"><div class="sc-num">02</div><div class="sc-icon">&#128106;</div><strong>Parents</strong><p>Stay fully informed about your child&rsquo;s learning progress, skill development, and career trajectory through our dedicated Parent Dashboard.</p><ul><li>Real-time progress tracking</li><li>Performance reports</li><li>Direct counsellor access</li></ul></div>
-      <div class="serve-card"><div class="sc-num">03</div><div class="sc-icon">&#127979;</div><strong>Colleges</strong><p>Enhance your institution&rsquo;s placement outcomes and employability ranking with data-driven student career development and industry-ready graduates.</p><ul><li>Bulk enrollment programs</li><li>Placement analytics</li><li>Campus-to-corporate bridge</li></ul></div>
-      <div class="serve-card"><div class="sc-num">04</div><div class="sc-icon">&#127970;</div><strong>Recruiters</strong><p>Access pre-screened, project-experienced, interview-ready talent from any engineering branch &mdash; evaluated on skills and capabilities, not just CGPA.</p><ul><li>Verified skill profiles</li><li>Branch-wise talent pool</li><li>Zero placement fees</li></ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about-section" id="about">
-  <div class="container">
-    <div class="about-inner">
-      <div class="about-text">
-        <h2>We Don&rsquo;t Just Train.<br><em>We Transform Futures.</em></h2>
-        <p>Founded by Shiva Challa, NexGenU was built on one powerful truth &mdash; talent is equally distributed but opportunity is not. Students from Tier 2 and Tier 3 colleges across India deserve the same career outcomes as those from premier institutions.</p>
-        <p>NexGenU bridges this gap with outcome-driven, industry-aligned education across three major career pathways &mdash; making quality career preparation affordable and accessible to every student in India.</p>
-        <blockquote>&ldquo;We are not just building a product. We are building futures.&rdquo;<br><cite>&mdash; Shiva Challa, Founder &amp; CEO, NexGenU</cite></blockquote>
+      <div class="plat-card pc-main">
+        <div class="pc-icon-lg">ðŸŽ¥</div>
+        <h3>Live & Interactive Classes</h3>
+        <p>Expert-led live sessions with real-time doubt solving, interactive quizzes, and peer collaboration tools. Learn at the pace that suits you â€” with replay access.</p>
       </div>
-      <div class="about-stats">
+      <div class="plat-card">
+        <div class="pc-icon">ðŸ§ </div>
+        <h4>AI-Powered Learning Paths</h4>
+        <p>Personalized skill gap analysis and adaptive curriculum that adjusts to your branch, year, and career goal</p>
+      </div>
+      <div class="plat-card">
+        <div class="pc-icon">ðŸ‘¨â€ðŸ‘©â€ðŸ‘§</div>
+        <h4>Parent & College Dashboards</h4>
+        <p>Real-time progress visibility for parents and institutional administrators â€” full transparency</p>
+      </div>
+      <div class="plat-card">
+        <div class="pc-icon">ðŸ’¼</div>
+        <h4>Live Project Lab</h4>
+        <p>MNC-level real project workflows with GitHub integration and reviewer feedback</p>
+      </div>
+      <div class="plat-card">
+        <div class="pc-icon">ðŸ“</div>
+        <h4>Unified Mock Test Engine</h4>
+        <p>Tests for IT interviews, government exams, and startup assessments â€” all in one dashboard</p>
+      </div>
+      <div class="plat-card">
+        <div class="pc-icon">ðŸŒ</div>
+        <h4>Community & Peer Network</h4>
+        <p>Forums, hackathon boards, study groups, and mentorship scheduling in one ecosystem</p>
+      </div>
+      <div class="plat-card">
+        <div class="pc-icon">ðŸ“±</div>
+        <h4>Mobile-First Design</h4>
+        <p>Full platform access on any device â€” learn during commute, revise before bed, test anytime</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â• WHO WE SERVE â•â•â•â•â•â•â• -->
+<section class="serve-section">
+  <div class="serve-inner">
+    <div class="serve-label">Our Stakeholders</div>
+    <h2>Built for Everyone in the<br/><span>Student Success Journey</span></h2>
+    <div class="serve-grid">
+      <div class="sc sc-student">
+        <div class="sc-num">01</div>
+        <div class="sc-icon">ðŸŽ“</div>
+        <h3>Students</h3>
+        <p>Engineering students of all branches, fresh graduates, job-seekers, government exam aspirants, and aspiring entrepreneurs â€” regardless of college tier, CGPA, or backlog status</p>
+        <ul><li>Career assessment & roadmap</li><li>Domain-specific training</li><li>Placement & exam support</li></ul>
+      </div>
+      <div class="sc sc-parent">
+        <div class="sc-num">02</div>
+        <div class="sc-icon">ðŸ‘¨â€ðŸ‘©â€ðŸ‘§</div>
+        <h3>Parents</h3>
+        <p>Stay fully informed about your child's learning progress, skill development, and career trajectory through our dedicated Parent Dashboard</p>
+        <ul><li>Real-time progress tracking</li><li>Performance reports</li><li>Direct counsellor access</li></ul>
+      </div>
+      <div class="sc sc-college">
+        <div class="sc-num">03</div>
+        <div class="sc-icon">ðŸ«</div>
+        <h3>Colleges</h3>
+        <p>Enhance your institution's placement outcomes and employability ranking with data-driven student career development and industry-ready graduates</p>
+        <ul><li>Bulk enrollment programs</li><li>Placement analytics</li><li>Campus-to-corporate bridge</li></ul>
+      </div>
+      <div class="sc sc-recruiter">
+        <div class="sc-num">04</div>
+        <div class="sc-icon">ðŸ¢</div>
+        <h3>Recruiters</h3>
+        <p>Access pre-screened, project-experienced, interview-ready talent from any engineering branch â€” evaluated on skills and capabilities, not just CGPA</p>
+        <ul><li>Verified skill profiles</li><li>Branch-wise talent pool</li><li>Zero placement fees</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â• HIRING PARTNERS â•â•â•â•â•â•â• -->
+<section class="partners-section">
+  <div class="partners-inner">
+    <div class="partners-label">Companies That Hire Our Students</div>
+    <div class="partners-marquee">
+      <div class="marquee-track">
+        <span>TCS</span><span>Infosys</span><span>Wipro</span><span>Accenture</span><span>Cognizant</span><span>Capgemini</span><span>HCL</span><span>Tech Mahindra</span><span>Amazon</span><span>Google</span><span>Microsoft</span><span>Deloitte</span><span>IBM</span><span>Oracle</span>
+        <span>TCS</span><span>Infosys</span><span>Wipro</span><span>Accenture</span><span>Cognizant</span><span>Capgemini</span><span>HCL</span><span>Tech Mahindra</span><span>Amazon</span><span>Google</span><span>Microsoft</span><span>Deloitte</span><span>IBM</span><span>Oracle</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â• ABOUT & VISION â•â•â•â•â•â•â• -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="about-label">About NexGenU</div>
+      <h2>We Don't Just Train.<br/><span>We Transform Futures.</span></h2>
+      <p>Founded by <a href="https://www.linkedin.com/in/shiva-challa-b519a8273" target="_blank" style="color:var(--indigo);font-weight:700;text-decoration:none;border-bottom:1px solid var(--indigo);">Shiva Challa</a>, NexGenU was built on one powerful truth â€” <em>talent is equally distributed but opportunity is not.</em> Students from Tier 2 and Tier 3 colleges across India deserve the same career outcomes as those from premier institutions.</p>
+      <p>NexGenU bridges this gap with outcome-driven, industry-aligned education across three major career pathways â€” making quality career preparation affordable and accessible to every student in India.</p>
+      <div class="vision-cards">
+        <div class="vc vc-vision">
+          <div class="vc-icon">ðŸŽ¯</div>
+          <strong>Our Vision</strong>
+          <p>"A complete student success ecosystem where every student â€” regardless of college tier or background â€” can achieve their dream career, government job, or startup success."</p>
+        </div>
+        <div class="vc vc-mission">
+          <div class="vc-icon">ðŸš€</div>
+          <strong>Our Mission</strong>
+          <p>Democratize access to career-transforming education through affordable, skill-first, outcome-driven learning pathways across corporate, government, and entrepreneurship sectors.</p>
+        </div>
+      </div>
+      <blockquote class="founder-quote">
+        "We are not just building a product. We are building futures."
+        <cite>â€” <a href="https://www.linkedin.com/in/shiva-challa-b519a8273" target="_blank" style="color:var(--gold2);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--gold2);padding-bottom:1px;">Shiva Challa</a>, Founder & CEO, NexGenU</cite>
+      </blockquote>
+    </div>
+    <div class="about-right">
+      <div class="ab-metrics">
         <div class="abm"><strong>1,000+</strong><span>Students Trained</span></div>
         <div class="abm"><strong>100+</strong><span>Hiring Partners</span></div>
         <div class="abm"><strong>100%</strong><span>Placement Rate</span></div>
         <div class="abm"><strong>3</strong><span>Career Pillars</span></div>
         <div class="abm"><strong>8+</strong><span>Engg. Branches</span></div>
         <div class="abm"><strong>25+</strong><span>Courses</span></div>
-        <div class="checklist-box">
-          <h4>Why Students Choose NexGenU</h4>
-          <ul class="checklist">
-            <li><span class="cl-check">&#10003;</span> All engineering branches &mdash; not just CSE</li>
-            <li><span class="cl-check">&#10003;</span> Govt exam coaching built-in</li>
-            <li><span class="cl-check">&#10003;</span> Complete startup incubation</li>
-            <li><span class="cl-check">&#10003;</span> Backlog students welcomed</li>
-            <li><span class="cl-check">&#10003;</span> Parent &amp; college transparency</li>
-            <li><span class="cl-check">&#10003;</span> AI-personalised learning paths</li>
-            <li><span class="cl-check">&#10003;</span> 100% placement guarantee</li>
-            <li><span class="cl-check">&#10003;</span> Affordable for every student</li>
-          </ul>
+      </div>
+      <div class="checklist-box">
+        <h4>Why Students Choose NexGenU</h4>
+        <div class="cl-items">
+          <div class="cl-item"><span class="cl-check">âœ“</span>All engineering branches â€” not just CSE</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Govt exam coaching built-in</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Complete startup incubation</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Backlog students welcomed</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Parent & college transparency</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>AI-personalised learning paths</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>100% placement guarantee</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Affordable for every student</div>
+          <div class="cl-item"><span class="cl-check">âœ“</span>Entrance exam prep (MBA, GATE & more)</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="fcta-section">
-  <div class="container">
-    <div class="fcta-inner">
-      <div class="fcta-text">
-        <h2>Your Career Journey<br>Starts With One Step.</h2>
-        <p>Join thousands of students who are already on their path &mdash; building careers in top companies, clearing government exams, and launching startups with NexGenU.</p>
-        <a href="https://form.nexgenu.dpdns.org" class="btn-primary btn-lg">Register &mdash; Start Today &rarr;</a>
-        <p class="fcta-note">Registration &middot; No credit card &middot; Counsellor calls within 24hrs</p>
-      </div>
-      <div class="fcta-pillars">
-        <div class="fp-card"><div class="fp-icon">&#128188;</div><strong>Engineering Career</strong><span>All branches &middot; 100% placement</span></div>
-        <div class="fp-card"><div class="fp-icon">&#127963;</div><strong>Government Jobs</strong><span>SSC &middot; Bank &middot; Rail &middot; Defence</span></div>
-        <div class="fp-card"><div class="fp-icon">&#128640;</div><strong>Startup Journey</strong><span>Idea &rarr; Funded startup</span></div>
-      </div>
+<!-- â•â•â•â•â•â•â• FINAL CTA â•â•â•â•â•â•â• -->
+<section class="final-cta" id="contact">
+  <div class="fcta-inner">
+    <div class="fcta-content">
+      <h2>Your Career Journey<br/>Starts With One Step.</h2>
+      <p>Join thousands of students who are already on their path â€” building careers in top companies, clearing government exams, and launching startups with NexGenU.</p>
+      <a href="https://nexgenu-form.vercel.app/" target="_blank" class="btn-fcta">Register â€” Start Today↓’</a>
+      <div class="fcta-note">Registration Â· No credit card Â· Counsellor calls within 24hrs</div>
+    </div>
+    <div class="fcta-pillars">
+      <div class="fcp fcp1"><span>ðŸ’¼</span><strong>Engineering Career</strong><p>All branches Â· 100% placement</p></div>
+      <div class="fcp fcp2"><span>ðŸ›ï¸</span><strong>Government Jobs</strong><p>SSC Â· Bank Â· Rail Â· Defence</p></div>
+      <div class="fcp fcp3"><span>ðŸš€</span><strong>Startup Journey</strong><p>Idea↓’ Funded startup</p></div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer" id="contact">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="brand-mark">N</div>
+<!-- â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â• -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="ft-brand">
+        <div class="brand-mark sm"><span>N</span></div>
         <div>
-          <strong>NexGenU</strong>
-          <p>Career Acceleration Ecosystem</p>
-          <p>Committed to transforming students into industry-ready professionals. Founded by Challa Shiva.</p>
+          <div class="brand-name">NexGenU</div>
+          <div class="brand-sub" style="color:var(--gold);">Career Acceleration Ecosystem</div>
         </div>
       </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
+      <p class="ft-about">Committed to transforming students into industry-ready professionals through three powerful pathways â€” Engineering Careers, Government Employment, and Entrepreneurship. Founded by Challa Shiva.</p>
+      
+    </div>
+    <div class="footer-cols">
+      <div class="fcol">
+        <h5>Quick Links</h5>
         <a href="#home">Home</a>
         <a href="#engineering">Engineering Track</a>
-        <a href="#govt">Govt Exam Coaching</a>
+        <a href="#govtjobs">Govt Exam Coaching</a>
         <a href="#startup">Startup Hub</a>
         <a href="#platform">Platform Features</a>
         <a href="#about">About Us</a>
       </div>
-      <div class="footer-links">
-        <h4>Engineering Courses</h4>
+      <div class="fcol">
+        <h5>Engineering Courses</h5>
         <a href="#">Full Stack Development</a>
-        <a href="#">Data Science &amp; AI</a>
+        <a href="#">Data Science & AI</a>
         <a href="#">Cloud Computing</a>
         <a href="#">Cyber Security</a>
-        <a href="#">Embedded &amp; IoT</a>
+        <a href="#">Embedded & IoT</a>
         <a href="#">CAD/CAM Design</a>
       </div>
-      <div class="footer-contact">
-        <h4>Contact</h4>
-        <a href="https://wa.me/919160262364">&#128172; WhatsApp: +91 91602 62364</a>
-        <a href="mailto:nexgenu.technologies@gmail.com">&#9993; nexgenu.technologies@gmail.com</a>
-        <a href="https://www.linkedin.com/in/shiva-challa-b519a8273" target="_blank">&#128279; LinkedIn &mdash; Shiva Challa</a>
-        <a href="https://home.nexgenu.dpdns.org">&#127760; home.nexgenu.dpdns.org</a>
+      <div class="fcol">
+        <h5>Govt Coaching</h5>
+        <a href="#">SSC Exams</a>
+        <a href="#">Banking (IBPS/SBI)</a>
+        <a href="#">Railway (RRB)</a>
+        <a href="#">Entrance Exams (MBA/GATE)</a>
+      </div>
+      <div class="fcol">
+        <h5>Contact</h5>
+        <a href="https://wa.me/919160262364" target="_blank">ðŸ’¬ WhatsApp: +91 91602 62364</a>
+        <a href="mailto:nexgenu.technologies@gmail.com">âœ‰ï¸ nexgenu.technologies@gmail.com</a>
+        <a href="https://www.linkedin.com/in/shiva-challa-b519a8273" target="_blank">ðŸ”— LinkedIn â€” Shiva Challa</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 NexGenU &middot; All Rights Reserved &middot; Founded by Challa Shiva</p>
-      <div><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></div>
+      <span>Â© 2025 NexGenU Â· All Rights Reserved Â· Founded by Challa Shiva</span>
+      <span><a href="#">Privacy Policy</a> &nbsp;Â·&nbsp; <a href="#">Terms of Service</a></span>
     </div>
   </div>
 </footer>
@@ -345,3 +622,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
