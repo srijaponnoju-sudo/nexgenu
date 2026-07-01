@@ -1,9 +1,9 @@
-/* ═══════════════════════════════════════════════════════
-   NEXGENU v3 — Completely New Design System
+﻿/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   NEXGENU v3 â€” Completely New Design System
    Identity: Deep slate + Indigo violet + Saffron gold + Jade green
    Signature: Asymmetric pillar sections with diagonal slice dividers
    Fonts: Space Grotesk (body) + Fraunces italic (display accent)
-═══════════════════════════════════════════════════════ */
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -50,17 +50,17 @@ body {
   line-height: 1.65;
 }
 
-/* ── Display font fallback ── */
+/* â”€â”€ Display font fallback â”€â”€ */
 .hero-heading, .pillar-heading, h2, .diff-inner h2,
 .platform-inner h2, .serve-inner h2, .about-inner h2, .final-cta h2 {
   font-family: 'Fraunces', 'Space Grotesk', Georgia, serif;
 }
 
-/* ── UTILITIES ── */
+/* â”€â”€ UTILITIES â”€â”€ */
 strong { font-weight: 700; }
 em { font-style: italic; color: var(--indigo2); }
 
-/* ── ANNOUNCE BAR ── */
+/* â”€â”€ ANNOUNCE BAR â”€â”€ */
 .announce-bar {
   background: linear-gradient(90deg, var(--indigo) 0%, #7c3aed 50%, var(--indigo) 100%);
   background-size: 200% auto;
@@ -92,7 +92,7 @@ em { font-style: italic; color: var(--indigo2); }
 }
 .announce-cta:hover { background: var(--gold2); }
 
-/* ── HEADER ── */
+/* â”€â”€ HEADER â”€â”€ */
 .header {
   position: sticky;
   top: 0;
@@ -155,7 +155,7 @@ em { font-style: italic; color: var(--indigo2); }
 }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--g700); border-radius: 2px; transition: all 0.3s; }
 
-/* ── HERO ── */
+/* â”€â”€ HERO â”€â”€ */
 .hero-section {
   background: var(--slate);
   padding: 80px 40px 0;
@@ -330,7 +330,7 @@ em { font-style: italic; color: var(--indigo2); }
 .metric span { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 4px; text-align: center; }
 .metric-sep { width: 1px; height: 36px; background: rgba(255,255,255,0.08); flex-shrink: 0; }
 
-/* ── PILLAR SECTIONS SHARED ── */
+/* â”€â”€ PILLAR SECTIONS SHARED â”€â”€ */
 .pillar-section { padding: var(--section-pad); }
 .pillar-wrapper { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
 .pillar-tag {
@@ -362,7 +362,7 @@ em { font-style: italic; color: var(--indigo2); }
 .p3-color span { color: var(--jade); }
 .pillar-desc { color: var(--g500); font-size: 1rem; line-height: 1.75; max-width: 640px; margin-bottom: 28px; }
 
-/* ── PILLAR 1 — Engineering ── */
+/* â”€â”€ PILLAR 1 â€” Engineering â”€â”€ */
 .p1-bg { background: var(--white); }
 .pillar-intro { margin-bottom: 60px; }
 .btn-pillar1 {
@@ -416,7 +416,7 @@ em { font-style: italic; color: var(--indigo2); }
 .off-item { display: flex; gap: 14px; }
 .off-dot { width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; display: flex; align-items: center; justify-content: center; }
 .off-dot.v { background: var(--indigo); }
-.off-dot.v::after { content: '✓'; color: white; font-size: 0.65rem; font-weight: 700; }
+.off-dot.v::after { content: 'âœ“'; color: white; font-size: 0.65rem; font-weight: 700; }
 .off-item strong { display: block; color: var(--slate); font-size: 0.9rem; margin-bottom: 3px; }
 .off-item p { color: var(--g500); font-size: 0.82rem; margin: 0; line-height: 1.5; }
 
@@ -448,7 +448,7 @@ em { font-style: italic; color: var(--indigo2); }
 .pp-step p { color: rgba(255,255,255,0.45); font-size: 0.75rem; }
 .pp-arrow { color: var(--indigo3); font-size: 1.4rem; flex-shrink: 0; opacity: 0.5; margin-top: 12px; }
 
-/* ── PILLAR 2 — Govt ── */
+/* â”€â”€ PILLAR 2 â€” Govt â”€â”€ */
 .p2-bg { background: var(--g50); }
 .p2-header { margin-bottom: 48px; }
 .govt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 56px; }
@@ -469,7 +469,7 @@ em { font-style: italic; color: var(--indigo2); }
 .gc-header span { color: var(--g400); font-size: 0.75rem; }
 .gc-list { list-style: none; display: flex; flex-direction: column; gap: 7px; flex: 1; }
 .gc-list li { color: var(--g700); font-size: 0.82rem; padding-left: 14px; position: relative; }
-.gc-list li::before { content: '·'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+.gc-list li::before { content: 'Â·'; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
 .gc-badge { display: inline-block; background: rgba(245,158,11,0.1); color: #B45309; font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 50px; border: 1px solid rgba(245,158,11,0.2); margin-top: auto; }
 .gc-ssc:hover { border-color: var(--indigo3); }
 .gc-bank:hover { border-color: var(--gold2); }
@@ -492,7 +492,7 @@ em { font-style: italic; color: var(--indigo2); }
 .gf-item strong { display: block; color: var(--slate); font-size: 0.9rem; margin-bottom: 6px; }
 .gf-item p { color: var(--g500); font-size: 0.8rem; line-height: 1.6; margin: 0; }
 
-/* ── PILLAR 3 — Startup ── */
+/* â”€â”€ PILLAR 3 â€” Startup â”€â”€ */
 .p3-bg { background: white; }
 .p3-header { margin-bottom: 48px; }
 .btn-gold { display: inline-block; background: var(--gold); color: var(--slate); padding: 13px 28px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; text-decoration: none; transition: all 0.2s; }
@@ -533,7 +533,7 @@ em { font-style: italic; color: var(--indigo2); }
 .ss-card h4 { font-weight: 700; color: var(--slate); font-size: 0.9rem; margin-bottom: 8px; }
 .ss-card p { color: var(--g500); font-size: 0.8rem; line-height: 1.6; margin: 0; }
 
-/* ── DIFF SECTION ── */
+/* â”€â”€ DIFF SECTION â”€â”€ */
 .diff-section {
   background: var(--slate);
   padding: var(--section-pad);
@@ -555,7 +555,7 @@ em { font-style: italic; color: var(--indigo2); }
 .x-icon { color: #EF4444; margin-right: 6px; }
 .c-icon { color: var(--jade2); margin-right: 6px; }
 
-/* ── PLATFORM FEATURES ── */
+/* â”€â”€ PLATFORM FEATURES â”€â”€ */
 .platform-section {
   background: var(--g50);
   padding: var(--section-pad);
@@ -588,7 +588,7 @@ em { font-style: italic; color: var(--indigo2); }
 .plat-card h4 { font-weight: 700; color: var(--slate); font-size: 0.9rem; margin-bottom: 8px; }
 .plat-card p { color: var(--g500); font-size: 0.8rem; line-height: 1.6; margin: 0; }
 
-/* ── WHO WE SERVE ── */
+/* â”€â”€ WHO WE SERVE â”€â”€ */
 .serve-section { padding: var(--section-pad); background: white; }
 .serve-inner { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
 .serve-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--indigo); margin-bottom: 12px; }
@@ -615,9 +615,9 @@ em { font-style: italic; color: var(--indigo2); }
 .sc p { color: var(--g500); font-size: 0.82rem; line-height: 1.65; margin-bottom: 14px; }
 .sc ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .sc ul li { color: var(--g700); font-size: 0.78rem; padding-left: 14px; position: relative; }
-.sc ul li::before { content: '→'; position: absolute; left: 0; color: var(--indigo2); font-size: 0.75rem; }
+.sc ul li::before { content: 'â†’'; position: absolute; left: 0; color: var(--indigo2); font-size: 0.75rem; }
 
-/* ── PARTNERS ── */
+/* â”€â”€ PARTNERS â”€â”€ */
 .partners-section { background: var(--slate); padding: 50px 0; overflow: hidden; }
 .partners-inner { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
 .partners-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); text-align: center; margin-bottom: 28px; }
@@ -640,7 +640,7 @@ em { font-style: italic; color: var(--indigo2); }
 .marquee-track span:hover { color: white; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-/* ── ABOUT ── */
+/* â”€â”€ ABOUT â”€â”€ */
 .about-section { background: var(--g50); padding: var(--section-pad); }
 .about-inner { max-width: 1160px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
 .about-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--indigo); margin-bottom: 12px; }
@@ -682,7 +682,7 @@ em { font-style: italic; color: var(--indigo2); }
 .cl-item { display: flex; align-items: center; gap: 12px; font-size: 0.87rem; color: var(--g700); }
 .cl-check { width: 22px; height: 22px; border-radius: 50%; background: var(--jade); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 700; flex-shrink: 0; }
 
-/* ── FINAL CTA ── */
+/* â”€â”€ FINAL CTA â”€â”€ */
 .final-cta {
   background: linear-gradient(135deg, var(--indigo) 0%, #7c3aed 50%, var(--indigo2) 100%);
   padding: 90px 40px;
@@ -721,7 +721,7 @@ em { font-style: italic; color: var(--indigo2); }
 .fcp strong { display: block; color: white; font-size: 0.9rem; margin-bottom: 2px; }
 .fcp p { color: rgba(255,255,255,0.5); font-size: 0.76rem; margin: 0; }
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 .footer { background: var(--slate); padding: 70px 0 0; }
 .footer-inner { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
 .footer-top { margin-bottom: 40px; }
@@ -751,11 +751,11 @@ em { font-style: italic; color: var(--indigo2); }
 .footer-bottom a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s; }
 .footer-bottom a:hover { color: var(--gold2); }
 
-/* ══════════════════════════════════════
-   RESPONSIVE — TABLET & MOBILE FULL FIX
-══════════════════════════════════════ */
+/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+   RESPONSIVE â€” TABLET & MOBILE FULL FIX
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
-/* ── TABLET 1024px ── */
+/* â”€â”€ TABLET 1024px â”€â”€ */
 @media (max-width: 1024px) {
   .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 70px; }
   .main-nav a { padding: 6px 10px; font-size: 0.82rem; }
@@ -770,7 +770,7 @@ em { font-style: italic; color: var(--indigo2); }
   .ab-metrics { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* ── MOBILE 768px ── */
+/* â”€â”€ MOBILE 768px â”€â”€ */
 @media (max-width: 768px) {
   /* Navbar */
   .header-inner { /* MOBILE NAV FIX */
@@ -910,7 +910,7 @@ em { font-style: italic; color: var(--indigo2); }
   .ft-about { font-size: 0.8rem; }
 }
 
-/* ── SMALL MOBILE 480px ── */
+/* â”€â”€ SMALL MOBILE 480px â”€â”€ */
 @media (max-width: 480px) {
   .hero-heading { font-size: 1.9rem; }
   .branch-grid { grid-template-columns: 1fr; }
@@ -928,4 +928,5 @@ em { font-style: italic; color: var(--indigo2); }
 
 
 /* force-redeploy-202607011349 */
+
 
