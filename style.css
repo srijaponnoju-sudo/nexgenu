@@ -106,12 +106,13 @@ em { font-style: italic; color: var(--indigo2); }
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 2rem;
   padding: 0 40px;
   height: 66px;
   max-width: 1280px;
   margin: 0 auto;
+  gap: 0;
 }
+.brand { flex-shrink: 0; margin-right: auto; }
 
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
 .brand-mark {
@@ -126,7 +127,7 @@ em { font-style: italic; color: var(--indigo2); }
 .brand-name { font-weight: 700; font-size: 1.1rem; color: var(--slate); display: block; line-height: 1.2; }
 .brand-sub { font-size: 0.6rem; color: var(--g400); display: block; line-height: 1; }
 
-.main-nav { display: flex; align-items: center; gap: 2px; margin-left: auto; }
+.main-nav { display: flex; align-items: center; gap: 2px; margin-right: 16px; }
 .main-nav a {
   text-decoration: none;
   color: var(--g500);
@@ -138,7 +139,7 @@ em { font-style: italic; color: var(--indigo2); }
 }
 .main-nav a:hover { color: var(--indigo); background: rgba(79,70,229,0.07); }
 
-.header-actions { display: flex; align-items: center; gap: 12px; margin-left: 0; }
+.header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .btn-register {
   background: var(--indigo);
   color: white;
@@ -788,7 +789,7 @@ em { font-style: italic; color: var(--indigo2); }
     justify-content: space-between;
     gap: 0;
   }
-  .brand { flex-shrink: 0; }
+  .brand { flex-shrink: 0; margin-right: 0; }
   .brand-sub { display: none; }
   .main-nav {
     display: none;
@@ -803,7 +804,7 @@ em { font-style: italic; color: var(--indigo2); }
     z-index: 199;
     max-height: calc(100vh - 58px);
     overflow-y: auto;
-    margin-left: 0;
+    margin-right: 0;
   }
   .main-nav.open { display: flex; }
   .main-nav a { padding: 10px 14px; font-size: 0.9rem; border-radius: 8px; }
@@ -812,7 +813,6 @@ em { font-style: italic; color: var(--indigo2); }
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: auto;
     flex-shrink: 0;
   }
   .btn-register { padding: 8px 14px; font-size: 0.82rem; }
@@ -869,9 +869,10 @@ em { font-style: italic; color: var(--indigo2); }
   .off-item p { font-size: 0.78rem; }
 
   /* Placement process */
-  .pp-steps { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .pp-arrow { transform: rotate(90deg); margin-left: 20px; }
-  .pp-step { padding: 0 0 0 8px; }
+  .pp-steps { flex-direction: column; align-items: center; gap: 4px; width: 100%; }
+  .pp-step { padding: 0; text-align: center; width: 100%; }
+  .pp-step .pp-num { margin: 0 auto 8px; }
+  .pp-arrow { transform: rotate(90deg); margin: 0 auto; display: block; text-align: center; }
 
   /* Govt grid */
   .govt-grid { grid-template-columns: 1fr; gap: 14px; }
