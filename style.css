@@ -448,9 +448,9 @@ em { font-style: italic; color: var(--indigo2); }
 .cli-left strong { display: block; font-size: 0.88rem; color: var(--slate); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .cli-left span { display: block; font-size: 0.73rem; color: var(--g400); }
 .placement-process h3 { color: white; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 28px; text-align: center; }
-.pp-steps { display: flex; align-items: flex-start; justify-content: center; gap: 0; flex-wrap: nowrap; overflow-x: auto; }
+.pp-steps { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 0; width: 100%; }
 .placement-process { background: var(--slate); border-radius: 20px; padding: 40px; overflow: hidden; }
-.pp-step { text-align: center; padding: 0 12px; min-width: 90px; flex: 1; }
+.pp-step { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; min-width: 120px; }
 .pp-num { width: 44px; height: 44px; border-radius: 50%; background: var(--indigo); color: white; font-weight: 800; font-size: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; }
 .pp-step strong { display: block; color: white; font-size: 0.9rem; margin-bottom: 4px; }
 .pp-step p { color: rgba(255,255,255,0.45); font-size: 0.75rem; }
@@ -765,7 +765,7 @@ em { font-style: italic; color: var(--indigo2); }
 
 /* ── TABLET 1024px ── */
 @media (max-width: 1024px) {
-  .header-inner { /* MOBILE NAV FIX */ padding: 0 24px; gap: 1rem; }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 70px; }
   .main-nav a { padding: 6px 10px; font-size: 0.82rem; }
   .branch-grid { grid-template-columns: repeat(3, 1fr); }
   .govt-grid { grid-template-columns: 1fr 1fr; }
@@ -869,8 +869,8 @@ em { font-style: italic; color: var(--indigo2); }
   .off-item p { font-size: 0.78rem; }
 
   /* Placement process */
-  .pp-steps { flex-direction: column; align-items: center; gap: 4px; width: 100%; }
-  .pp-step { padding: 0; text-align: center; width: 100%; }
+  .pp-steps { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 0; width: 100%; }
+  .pp-step { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; min-width: 120px; }
   .pp-step .pp-num { margin: 0 auto 8px; }
   .pp-arrow { transform: rotate(90deg); margin: 0 auto; display: block; text-align: center; }
 
