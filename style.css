@@ -110,9 +110,9 @@ em { font-style: italic; color: var(--indigo2); }
   height: 66px;
   max-width: 1280px;
   margin: 0 auto;
-  gap: 0;
+  gap: 1rem;
 }
-.brand { flex-shrink: 0; margin-right: auto; }
+.brand { flex-shrink: 0; }
 
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
 .brand-mark {
@@ -127,7 +127,7 @@ em { font-style: italic; color: var(--indigo2); }
 .brand-name { font-weight: 700; font-size: 1.1rem; color: var(--slate); display: block; line-height: 1.2; }
 .brand-sub { font-size: 0.6rem; color: var(--g400); display: block; line-height: 1; }
 
-.main-nav { display: flex; align-items: center; gap: 2px; margin-right: 16px; }
+.main-nav { display: flex; align-items: center; gap: 2px; margin-left: auto; }
 .main-nav a {
   text-decoration: none;
   color: var(--g500);
@@ -138,7 +138,6 @@ em { font-style: italic; color: var(--indigo2); }
   transition: all 0.2s;
 }
 .main-nav a:hover { color: var(--indigo); background: rgba(79,70,229,0.07); }
-
 .header-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .btn-register {
   background: var(--indigo);
@@ -439,22 +438,23 @@ em { font-style: italic; color: var(--indigo2); }
   background: var(--g50);
   border: 1px solid var(--g100);
   transition: all 0.2s;
+  overflow: visible;
 }
-.clist-item:hover { background: #ede9fe; border-color: var(--indigo3); }
-.cli-left { display: flex; align-items: center; gap: 12px; }
-.cli-icon { font-size: 1.3rem; }
-.cli-left strong { display: block; font-size: 0.88rem; color: var(--slate); }
-.cli-left span { display: block; font-size: 0.73rem; color: var(--g400); }
-.cli-dur { font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 50px; white-space: nowrap; }
+.cli-dur { font-size: 0.75rem; font-weight: 700; color: var(--indigo2); background: rgba(79,70,229,0.08); padding: 3px 10px; border-radius: 50px; white-space: nowrap; flex-shrink: 0; margin-left: 8px; }
 
-.placement-process { background: var(--slate); border-radius: 20px; padding: 40px; }
+.clist-item:hover { background: #ede9fe; border-color: var(--indigo3); }
+.cli-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
+.cli-icon { font-size: 1.3rem; flex-shrink: 0; }
+.cli-left strong { display: block; font-size: 0.88rem; color: var(--slate); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cli-left span { display: block; font-size: 0.73rem; color: var(--g400); }
 .placement-process h3 { color: white; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 28px; text-align: center; }
-.pp-steps { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
-.pp-step { text-align: center; padding: 0 20px; }
+.pp-steps { display: flex; align-items: flex-start; justify-content: center; gap: 0; flex-wrap: nowrap; overflow-x: auto; }
+.placement-process { background: var(--slate); border-radius: 20px; padding: 40px; overflow: hidden; }
+.pp-step { text-align: center; padding: 0 12px; min-width: 90px; flex: 1; }
 .pp-num { width: 44px; height: 44px; border-radius: 50%; background: var(--indigo); color: white; font-weight: 800; font-size: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; }
 .pp-step strong { display: block; color: white; font-size: 0.9rem; margin-bottom: 4px; }
 .pp-step p { color: rgba(255,255,255,0.45); font-size: 0.75rem; }
-.pp-arrow { color: var(--indigo3); font-size: 1.4rem; flex-shrink: 0; opacity: 0.5; }
+.pp-arrow { color: var(--indigo3); font-size: 1.4rem; flex-shrink: 0; opacity: 0.5; margin-top: 12px; }
 
 /* ── PILLAR 2 — Govt ── */
 .p2-bg { background: var(--g50); }
@@ -765,7 +765,7 @@ em { font-style: italic; color: var(--indigo2); }
 
 /* ── TABLET 1024px ── */
 @media (max-width: 1024px) {
-  .header-inner { padding: 0 24px; gap: 1rem; }
+  .header-inner { /* MOBILE NAV FIX */ padding: 0 24px; gap: 1rem; }
   .main-nav a { padding: 6px 10px; font-size: 0.82rem; }
   .branch-grid { grid-template-columns: repeat(3, 1fr); }
   .govt-grid { grid-template-columns: 1fr 1fr; }
@@ -781,7 +781,7 @@ em { font-style: italic; color: var(--indigo2); }
 /* ── MOBILE 768px ── */
 @media (max-width: 768px) {
   /* Navbar */
-  .header-inner {
+  .header-inner { /* MOBILE NAV FIX */
     padding: 0 16px;
     height: 58px;
     display: flex;
